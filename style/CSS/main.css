@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("/fonts/poppins/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("/fonts/poppins/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #674baf;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 2fr 1fr;
+  grid-template-rows: 170px 1fr repeat(3, 1fr);
+  grid-template-areas: "espacio navigation navigation" "espacio contenido1  contenido2" "espacio     button      button  " "espacio    icon-social  icon-social" "espacio     footer      footer  ";
+}
+.container .navbar-huddle {
+  grid-column: navigation/navigation;
+  grid-row: navigation/navigation;
+}
+.container .container-content-img {
+  grid-column: contenido1/contenido1;
+  grid-row: contenido1/contenido1;
+}
+.container .container-content-text {
+  grid-column: contenido2/contenido2;
+  grid-row: contenido2/contenido2;
+}
+.container .btn-box {
+  grid-column: button/button;
+  grid-row: button/button;
+}
+.container .container-icons {
+  grid-column: icon-social/icon-social;
+  grid-row: icon-social/icon-social;
+}
+.container footer {
+  grid-column: footer/footer;
+  grid-row: footer/footer;
+}
+
+.header-huddle {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/bg-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header-huddle .container-content-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-huddle .container-content-img img {
+  width: 90%;
+  max-width: 84%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navbar-huddle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar-huddle .navbar-brand-huddle {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "navigation navigation navigation" "contenido1 contenido1 contenido1" "contenido2 contenido2 contenido2" "button     button     button    " "icon-social icon-social icon-social" "footer      footer      footer     ";
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

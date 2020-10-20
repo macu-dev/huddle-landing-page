@@ -2,51 +2,33 @@
   width:$size-100;
   height:$size-100;
   display:grid;
-  grid-template-columns: $sidebar-width repeat(6,1fr);
-  grid-template-rows: repeat(20,auto);
-  grid-template-areas:"navigation header header header header header header"
-                      "navigation header header header header header header"
-                      "navigation header header header header header header"
-                      "navigation header header header header header header"
-                      "navigation myList myList myList myList myList myList" 
-                      "navigation myList myList myList myList myList myList"
-                      "navigation myList myList myList myList myList myList"                                            
-                      "navigation popular popular popular popular popular popular" 
-                      "navigation popular popular popular popular popular popular" 
-                      "navigation popular popular popular popular popular popular" 
-                      "navigation news    news    news    news    news    news"
-                      "navigation news    news    news    news    news    news"
-                      "navigation news    news    news    news    news    news"
-                      "navigation trending  trending  trending    trending    trending    trending" 
-                      "navigation trending  trending  trending    trending    trending    trending" 
-                      "navigation trending  trending  trending    trending    trending    trending" 
-                      "navigation footer footer  footer  footer    footer    footer" 
-                      "navigation footer footer  footer  footer    footer    footer" 
-                      "navigation footer footer  footer  footer    footer    footer" 
-                      "navigation footer footer  footer  footer    footer    footer" ;
+  grid-template-columns: 5% 2fr 1fr;
+  grid-template-rows: 170px 1fr repeat(3,1fr);
+  grid-template-areas:"espacio navigation navigation"
+                      "espacio contenido1  contenido2"
+                      "espacio     button      button  "
+                      "espacio    icon-social  icon-social" 
+                      "espacio     footer      footer  " ;
 
-  header{
-    @include grid-row-column(header);
-  }
 
-  .navigation-netflix{
+  .navbar-huddle{
     @include grid-row-column(navigation);
   }
 
- .my-list-netflix{
-    @include grid-row-column(myList);
+ .container-content-img{
+    @include grid-row-column(contenido1);
   }
 
- .popular-netflix{
-    @include grid-row-column(popular);
+ .container-content-text{
+    @include grid-row-column(contenido2);
   }
 
- .news-netflix{
-    @include grid-row-column(news);
+ .btn-box{
+    @include grid-row-column(button);
   } 
 
-  .trending-netflix{
-    @include grid-row-column(trending);
+  .container-icons{
+    @include grid-row-column(icon-social);
   }
 
   footer{

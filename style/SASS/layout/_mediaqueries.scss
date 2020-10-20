@@ -1,98 +1,15 @@
-@include mq ($extra-large){
-  .container header{
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-  }
+@include mq ($medium){
+  .container {
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas:"navigation navigation navigation"
+                        "contenido1 contenido1 contenido1"
+                        "contenido2 contenido2 contenido2"
+                        "button     button     button    "
+                        "icon-social icon-social icon-social" 
+                        "footer      footer      footer     " ;
 
-  .box-info-serie .overview-serie ,.box-clasification-serie .clasification, .box-clasification-serie .hd {
-    color:$color-icon;
-  }
-
-  .column-footer1 a, .column-footer2 a, .column-footer3 a, .column-footer4 a, .btn-box button, .btn-box + p {
-    font-size: 0.79rem;
   }
 
 }
-
-@include mq ($large){
-  footer .column-footer1, footer .column-footer2, footer .column-footer3, footer .column-footer4{
-    width: 50%;
-    height: auto;
-  }
-
-  .box-text .title-netflix, .box-text .title-netflix span {
-    font-size: 1.256rem;
-  }
-
-  .box-text .title-serie{
-    font-size: 5vmax;
-  }
-
-  .box-info-serie .overview-serie{
-    font-size: 1.156rem;
-    width: 100%;
-  }
-
-  .my-list-netflix .title-section, .popular-netflix .title-section, .news-netflix .title-section, .trending-netflix .title-section{
-    font-size: 1.4rem;
-  }
-
-  .box-clasification-serie .match, .box-clasification-serie .year, .box-clasification-serie .seasons, .box-clasification-serie .hd{
-    font-size: initial;
-    margin-left: 6px;
-  }
-
-  .box-clasification-serie .year{
-    padding: 0;
-  }
-
-  .gallery-my-list{
-    @include grid (repeat(2,1fr), repeat(3, 1fr));
-    width: calc( 100% - var(--sidebar-widht) );
-    height: auto;
-    gap: 0.5rem;
-  }
-
-  .arrow-gallery{
-    display: none !important;
-  }
-
-
-  .gallery-item{
-    width: $size-100;
-    height: $size-100;
-  
-    img{
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-  }
-}
-
-@include mq (434px){
-  .box-clasification-serie{
-    display: none;
-  }
-
-  .social-links{
-    display: inline-block;
-    .footer-img{
-      width: 22px;
-    }
-
-    svg{
-      margin-right: 0.5rem;
-    }
-  }
-
-  .column-footer2, .column-footer3, .column-footer4{
-    padding-top: 2rem;
-  }
-  
-}
-
-
 
 
