@@ -1,0 +1,84 @@
+.container{
+  header{
+    @include bg($color-bg-img, url("/img/stranger-things.jpg"), 70%, right);
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: $color-white;
+    align-content: center;
+  }
+}
+
+.box-text{
+  width: $size-100;
+  padding:0 2rem;
+
+  .title-netflix{
+    @include font($font-monstserrat, 1.4rem, $color-white);
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    span{
+      @include font($font-original, 1
+      .4rem, $color-white);
+      margin-left: 3px;
+      text-transform: uppercase;
+    }
+  }
+
+  .title-serie{
+    @include font($font-serie, 4rem, $color-white);
+    text-transform: uppercase;
+    transform:scale(1,1.15);
+  }
+}
+
+.box-info-serie{
+ padding: 0 2rem;
+}
+
+.box-clasification-serie{
+  .match{
+    text-transform: capitalize;
+    color:rgb(9, 160, 9);
+    letter-spacing: 1px;
+    font-size: 1.15rem;
+  }
+
+  .year{
+    margin-left: $margin;
+    font-size: 1.15rem;
+  }
+
+  .clasification{
+    background-color: rgb(31, 30, 30);
+    padding: 4px;
+    color:grey;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: $margin;
+  }
+
+  .seasons{
+   @include settings-clasification(capitalize);
+  }
+
+  .hd{
+    @include settings-clasification(uppercase);
+    color: $color-grey;
+    border: 1px solid  $color-grey;
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+}
+
+.box-info-serie{
+
+  .overview-serie{
+    margin-top: $margin;
+    @include font($font-monstserrat, 1.3rem, $color-grey);
+    line-height: 26px;
+    width: $size-50;
+  }
+}
