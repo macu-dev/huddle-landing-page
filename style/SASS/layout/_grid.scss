@@ -2,9 +2,9 @@
   width:$size-100;
   height:$size-100;
   display:grid;
-  grid-template-columns: 5% 2fr 1fr;
+  grid-template-columns: 5% 1.3fr 1fr;
   grid-template-rows: 170px 1fr repeat(3,1fr);
-  grid-template-areas:"espacio navigation navigation"
+  grid-template-areas:"espacio navigation navigation "
                       "espacio contenido1  contenido2"
                       "espacio     button      button  "
                       "espacio    icon-social  icon-social" 
