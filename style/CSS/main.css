@@ -132,6 +132,26 @@ body {
   justify-content: flex-end;
 }
 
+.btn-box {
+  margin-top: 1rem;
+}
+.btn-box .btn-register {
+  font-family: "Poppins-regular";
+  font-size: 0.8rem;
+  color: #674baf;
+  border-radius: 20px;
+  border: none;
+  line-height: 20px;
+  width: 160px;
+  padding: 0.8rem;
+  background-color: white;
+  box-shadow: 1px 0 30px #674baf;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-rows: repeat(6, auto);
