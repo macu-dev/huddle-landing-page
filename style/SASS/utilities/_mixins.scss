@@ -30,19 +30,6 @@
   color:$color;
 }
 
-@mixin settings-clasification($text-style){
-  text-transform: $text-style;
-  margin-left:10px;
-}
-
-
-@mixin carrousel{
-  width: $size-100;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  height: inherit;
-  position: relative;
-}
 
 @mixin grid($column, $row){
   display: grid;
@@ -51,12 +38,6 @@
   @content;
 }
 
-
-@mixin zoom ($scale,$transition) {
-  transform: $scale;
-  transform-origin: center;
-  transition: $transition;
-}
 
 @mixin configLink{
   text-decoration: none;

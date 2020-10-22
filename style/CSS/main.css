@@ -106,6 +106,7 @@ body {
   text-align: left;
   width: 100%;
   align-self: center;
+  margin-top: 1rem;
 }
 .header-huddle .container-content-text .parraf {
   font-family: "Open Sans";
@@ -123,13 +124,31 @@ body {
   width: 50%;
 }
 
+footer .attribution {
+  color: white;
+  font-family: "Open Sans";
+}
+
 .container-icons {
   width: 100%;
+  padding-right: 4rem;
 }
 .container-icons .box-icons-social {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+.container-icons .box-icons-social a {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 .btn-box {
@@ -139,16 +158,15 @@ body {
   font-family: "Poppins-regular";
   font-size: 0.8rem;
   color: #674baf;
-  border-radius: 20px;
+  background-color: white;
   border: none;
+  border-radius: 20px;
+  padding: 0.8rem;
+  cursor: pointer;
   line-height: 20px;
   width: 160px;
-  padding: 0.8rem;
-  background-color: white;
   box-shadow: 1px 0 30px #674baf;
-  text-decoration: none;
   display: inline-block;
-  cursor: pointer;
   text-align: center;
 }
 
@@ -156,6 +174,66 @@ body {
   .container {
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "navigation navigation navigation" "contenido1 contenido1 contenido1" "contenido2 contenido2 contenido2" "button     button     button    " "icon-social icon-social icon-social" "footer      footer      footer     ";
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-right: 8%;
+  }
+
+  .header-huddle {
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-huddle {
+    margin-bottom: 3rem;
+  }
+
+  .navbar-brand-huddle img {
+    width: 150px;
+  }
+
+  .container-content-text {
+    padding: 0 !important;
+  }
+  .container-content-text .text-title h1 {
+    text-align: center;
+    font-size: 1.66rem;
+  }
+  .container-content-text .parraf {
+    text-align: center;
+    padding: 0 2% 0 3%;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-box .btn-register {
+    width: 200px;
+    padding: 0.6rem;
+  }
+
+  .container-icons .box-icons-social a {
+    margin-right: 10px;
+  }
+
+  .container-icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.8rem;
+  }
+  .container-icons .box-icons-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .attribution {
+    margin-top: 1rem;
+    font-size: 0.8rem;
   }
 }
 

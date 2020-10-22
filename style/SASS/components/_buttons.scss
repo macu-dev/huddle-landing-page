@@ -3,34 +3,13 @@
 
   .btn-register{
     @include font($font-poppin-regular, 0.8rem, $color-violet );
-    border-radius: 20px;
-    border: none;
+    @include btn ($color-white, none , 20px, 0.8rem);
     line-height: 20px;
     width: 160px;
-    padding: 0.8rem;
-    background-color: $color-white;
     box-shadow: 1px 0 30px $color-violet;
-    text-decoration: none;
     display: inline-block;
-    cursor: pointer;
     text-align: center;
   }
 
 }
   
-  
-  
-  
-  // border-radius: 20px;
-  // height: 40px;
-  // line-height: 20px;
-  // color: #674BAF;
-  // width: 200px;
-  // font-size: 0.8rem;
-  // padding: 10px;
-  // background-color: #FFFFFF;
-  // box-shadow: 1px 0 20px 0 #594197;
-  // text-decoration: none;
-  // display: inline-block;
-  // cursor: pointer;
-  // text-align: center;
